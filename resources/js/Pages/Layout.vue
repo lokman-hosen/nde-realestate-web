@@ -7,9 +7,7 @@ import Footer from "../Component/Footer.vue";
 <template>
     <main>
         <Navbar/>
-        <article>
-            <slot />
-        </article>
+          <slot />
         <Footer/>
     </main>
 

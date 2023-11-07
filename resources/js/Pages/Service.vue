@@ -5,7 +5,7 @@ import Service from "../Component/Home/Common/Service.vue";
 </script>
 <template>
     <Layout>
-        <Head title="About" />
+        <Head title="Service" />
         <!-- Page Header Start -->
         <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center py-5">
