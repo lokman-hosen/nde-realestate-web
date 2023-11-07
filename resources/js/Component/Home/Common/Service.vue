@@ -1,5 +1,26 @@
 <script setup>
+import ServiceDetail from "./ServiceDetail.vue";
 
+const services = [
+    {
+        'id' : 1,
+        'title' : 'Building Construction',
+        'description' : 'Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos',
+        'imgPath' : '/assets/frontend/img/service-1.jpg',
+    },
+    {
+        'id' : 2,
+        'title' : 'Home Maintainance',
+        'description' : 'Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos',
+        'imgPath' : 'assets/frontend/img/service-2.jpg',
+    },
+    {
+        'id' : 3,
+        'title' : 'Renovation and Painting',
+        'description' : 'Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos',
+        'imgPath' : 'assets/frontend/img/service-3.jpg',
+    }
+]
 </script>
 
 <template>
@@ -17,66 +38,9 @@
                 </div>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-1.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Building Construction</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-2.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Home Maintainance</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-3.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Renovation and Painting</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-4.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Wiring and installation</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-5.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Tiling and Painting</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-light overflow-hidden h-100">
-                        <img class="img-fluid" src="/assets/frontend/img/service-6.jpg" alt="">
-                        <div class="service-text position-relative text-center h-100 p-4">
-                            <h5 class="mb-3">Interior Design</h5>
-                            <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
-                            <!--                            <a class="small" href="">READ MORE<i class="fa fa-arrow-right ms-3"></i></a>-->
-                        </div>
-                    </div>
-                </div>
+                <template v-for="service of services">
+                    <ServiceDetail :service="service"/>
+                </template>
             </div>
         </div>
     </div>
