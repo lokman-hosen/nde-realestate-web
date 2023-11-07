@@ -21,6 +21,7 @@
             'imaPath' : 'assets/frontend/img/carousel-2.jpg',
         }
     ]
+
 </script>
 
 <template>

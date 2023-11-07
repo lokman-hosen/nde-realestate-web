@@ -13,10 +13,10 @@ import Team from "../Component/Home/Team.vue";
 <template>
     <Layout>
         <Head title="Home" />
-
         <!-- Carousel Start -->
        <Slider/>
         <!-- Carousel End -->
+
         <!-- About Start -->
        <About/>
         <!-- About End -->
