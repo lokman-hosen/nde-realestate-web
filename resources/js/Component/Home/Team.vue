@@ -1,5 +1,26 @@
 <script setup>
+import TeamDetail from "./Common/TeamDetail.vue";
 
+const teams = [
+    {
+        'id' : 1,
+        'name' : 'Full Name',
+        'designation' : 'Engineer',
+        'imgPath' : 'assets/frontend/img/team-1.jpg',
+    },
+    {
+        'id' : 2,
+        'name' : 'Full Name 1',
+        'designation' : 'Engineer',
+        'imgPath' : 'assets/frontend/img/team-2.jpg',
+    },
+    {
+        'id' : 3,
+        'name' : 'Full Name 2',
+        'designation' : 'Engineer',
+        'imgPath' : 'assets/frontend/img/team-2.jpg',
+    }
+]
 </script>
 
 <template>
@@ -17,33 +38,9 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid" src="/assets/frontend/img/team-1.jpg" alt="">
-                        <div class="team-text bg-white p-4">
-                            <h5>Full Name</h5>
-                            <span>Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid" src="/assets/frontend/img/team-2.jpg" alt="">
-                        <div class="team-text bg-white p-4">
-                            <h5>Full Name</h5>
-                            <span>Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid" src="/assets/frontend/img/team-3.jpg" alt="">
-                        <div class="team-text bg-white p-4">
-                            <h5>Full Name</h5>
-                            <span>Engineer</span>
-                        </div>
-                    </div>
-                </div>
+                <template v-for="team of teams">
+                    <TeamDetail :team="team"/>
+                </template>
             </div>
         </div>
     </div>
