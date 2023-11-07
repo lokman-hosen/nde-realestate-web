@@ -23,7 +23,7 @@ import Layout from "./Layout.vue";
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12"><h3 class="text-center mb-5 text-uppercase">Our Office</h3></div>
+                    <div class="col-12"><h3 class="text-center mb-5 text-uppercase">Branch Office</h3></div>
                     <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="card info-box border shadow-sm">
                             <div class="box-content">
@@ -54,7 +54,7 @@ import Layout from "./Layout.vue";
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-12"><h3 class="text-center mb-5 text-uppercase">Head Office</h3></div>
+                    <div class="col-12"><h3 class="text-center mb-5 text-uppercase">Corporate Office</h3></div>
                     <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="card info-box border shadow-sm">
                             <div class="box-content">

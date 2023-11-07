@@ -7,11 +7,6 @@ import Footer from "../Component/Footer.vue";
 <template>
     <main>
         <Navbar/>
-<!--        <header>-->
-<!--            <Link href="/">Home</Link>-->
-<!--            <Link href="/about">About</Link>-->
-<!--            <Link href="/contact">Contact</Link>-->
-<!--        </header>-->
         <article>
             <slot />
         </article>

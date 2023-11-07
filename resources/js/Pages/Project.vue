@@ -27,7 +27,7 @@ import Layout from "./Layout.vue";
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <button class="nav-link active text-uppercase" id="nav-completed-project-tab" data-bs-toggle="tab" data-bs-target="#nav-completed-project" type="button" role="tab" aria-controls="nav-completed-project" aria-selected="true">Completed</button>
-                                <button class="nav-link text-uppercase" id="nav-current-project-tab" data-bs-toggle="tab" data-bs-target="#nav-current-project" type="button" role="tab" aria-controls="nav-current-project" aria-selected="false">Current</button>
+                                <button class="nav-link text-uppercase" id="nav-current-project-tab" data-bs-toggle="tab" data-bs-target="#nav-current-project" type="button" role="tab" aria-controls="nav-current-project" aria-selected="false">Under Construction</button>
                                 <button class="nav-link text-uppercase" id="nav-up-coming-tab" data-bs-toggle="tab" data-bs-target="#nav-up-coming" type="button" role="tab" aria-controls="nav-up-coming" aria-selected="false">Upcoming</button>
                             </div>
                         </nav>

@@ -9,9 +9,15 @@
             'imaPath' : 'assets/frontend/img/carousel-1.jpg',
         },
         {
-            'id' : 3,
+            'id' : 2,
             'title' : 'Welcome to NDE Real Estate Ltd.',
             'sub_title' : 'Professional Tiling & Painting Services',
+            'imaPath' : 'assets/frontend/img/carousel-2.jpg',
+        },
+        {
+            'id' : 3,
+            'title' : 'Welcome to NDE Real Estate Ltd. 5',
+            'sub_title' : 'Professional Tiling & Painting Services 5',
             'imaPath' : 'assets/frontend/img/carousel-2.jpg',
         }
     ]
@@ -21,7 +27,10 @@
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-               <SliderDetail/>
+                <template v-for="(carousel,index) in carousels">
+                    <SliderDetail :carousel="carousel" :index="index"/>
+                </template>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                     data-bs-slide="prev">
