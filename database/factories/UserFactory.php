@@ -23,6 +23,7 @@ class UserFactory extends Factory
         return [
             'name' => 'Super Admin',
             'email' => 'admin@ndeinfratection.com',
+            'type' => 'super-admin',
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -39,3 +40,10 @@ Route::match(['get', 'post'], 'register', function(){
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('admin')->name('admin.')->middleware(['web', 'auth'])->group(function () {
+    Route::get('user-profile', [UserController::class, 'profile'])->name('users.profile');
+    Route::post('user-profile', [UserController::class, 'profileUpdate'])->name('users.profile.update');
+    Route::post('user-password-change', [UserController::class, 'changePassword'])->name('users.change.password');
+
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
