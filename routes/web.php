@@ -32,3 +32,10 @@ Route::get('/project', function () {
 Route::get('/contact', function () {
     return Inertia::render('Contact');
 });
+
+Auth::routes();
+Route::match(['get', 'post'], 'register', function(){
+    return redirect('/login');
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
