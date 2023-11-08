@@ -1,10 +1,8 @@
 <script setup>
 import { Link } from '@inertiajs/vue3'
-
 </script>
 
 <template>
-    <!-- Topbar Start -->
     <div class="container-fluid bg-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
@@ -31,11 +29,8 @@ import { Link } from '@inertiajs/vue3'
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <Link href="/" class="navbar-brand d-flex align-items-center">
-            <!--        <h1 class="m-0"><i class="fa fa-building text-primary me-3"></i>APEX</h1>-->
             <img src="/assets/frontend/img/logo.png" style="width: 7rem;">
         </Link>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -51,5 +46,4 @@ import { Link } from '@inertiajs/vue3'
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 </template>

@@ -34,7 +34,7 @@ const services = [
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                    <a class="btn btn-primary py-3 px-5" href="service.html">More Services</a>
+                    <a class="btn btn-primary py-3 px-5" href="">More Services</a>
                 </div>
             </div>
             <div class="row g-4 justify-content-center">
